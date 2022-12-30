@@ -1,0 +1,29 @@
+#include<stdio.h>
+main(){
+	int n; 
+	printf("Enter size :");
+	scanf("%d",&n);
+	
+	int a[n][n];
+	int r,c;
+	int length;
+	
+	for(r=0; r<n; r++){
+		for(c=0; c<n; c++){
+				printf("Enter value[%d][%d]:",r,c);
+			scanf("%d",&a[r][c]);
+			
+		}
+	}
+	for(r=0; r<n; r++){
+		for(c=0; c<n; c++){
+			printf("%d",a[r][c]);
+		
+		}
+		
+	}
+	length=sizeof(a[r][c])/sizeof(int);
+	printf("\n");
+		printf("%d",length);
+}
+
